@@ -1,0 +1,35 @@
+{
+  "name": "Scarlab.",
+  "version": "2.0.0",
+  "manifest_version": 2,
+  "description": "Kişiselleştirilebilir Google Chrome yeni sekme sayfası!",
+  "homepage_url": "http://volkanyıldız.net",
+  "author": "Volkan Yıldız",
+  "short_name": "Scarlab. Home Page",
+  "update_url": "https://clients2.google.com/service/update2/crx",
+    "content_security_policy": "script-src 'self' https://www.google-analytics.com 'unsafe-eval'; object-src 'self'",
+
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "chrome_url_overrides": {
+    "newtab": "html/newtab.html"
+  },
+  "minimum_chrome_version": "23",
+  "background": {
+    "scripts": [
+      "html/js/background.js"
+    ],
+    "persistent": true
+  },
+  "default_locale": "tr",
+  "permissions": [
+    "tabs",
+    "geolocation",
+    "storage",
+    "http://*/*",
+    "https://*/*"
+  ]
+}

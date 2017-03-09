@@ -1,0 +1,55 @@
+﻿<html>
+   <head>
+      <title>Weather</title>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+      <script type="text/javascript" src="js/iscroll.js"></script>
+      <script type="text/javascript" src="js/weather.js"></script>
+      <script type="text/javascript" src="js/newtab.js"></script>
+   </head>
+   <body class="not-mobile">
+      <div id="settingsToggle"></div>
+      <div id="loading" class="hidden" style="opacity: 0;">
+         <div>
+            <img src="img/sunny.png">
+            <p>Checking the Weather</p>
+         </div>
+      </div>
+      <div id="wrapper" style="overflow: hidden;">
+         <div id="weather" style="transition-property: transform; transform-origin: 0px 0px 0px; transform: translate(0px, 0px) scale(1) translateZ(0px);">
+            <div class="forecast sunny">
+               <div class="current">
+                  <div class="current-temp" id="time">00:00:00</div>
+                  <!-- <div class="current-icon clock"></div>-->
+               </div>
+               <div class="high_low" id="date">01 Ocak 2016 Cuma</div>
+               <div class="city">Izmir, İzmir, Turkey</div>
+            </div>
+            <div class="forecast snow">
+               <div class="current">
+                  <div class="current-temp">23:00</div>
+                  <!-- <div class="current-icon sunny"></div>-->
+               </div>
+               <div class="high_low">undefined° / undefined°</div>
+               <div class="city">Istanbul, İstanbul, Turkey</div>
+            </div>
+            <div class="forecast rain">
+               <div class="current">
+                  <div class="current-temp">23</div>
+                  <!-- <div class="current-icon sunny"></div>-->
+               </div>
+               <div class="high_low">undefined° / undefined°</div>
+               <div class="city">Istanbul, İstanbul, Turkey</div>
+            </div>
+         </div>
+      </div>
+      <div id="dots">
+         <div id="prev"></div>
+         <div class="dot shown selected" title="one"></div>
+         <div class="dot shown" title="two"></div>
+         <div class="dot shown" title="three"></div>
+         <div id="next"></div>
+      </div>
+   </body>
+</html>
